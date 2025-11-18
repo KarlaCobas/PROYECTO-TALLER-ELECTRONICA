@@ -351,15 +351,7 @@ section {
 }
 #about .about-content {
   flex-basis: 60%;
-}
-#about .about-content.glass-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 2.5rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 #about .about-content h2 {
   font-size: 2rem;
@@ -376,7 +368,6 @@ section {
   }
   #about .about-content {
     flex-basis: 100%;
-    text-align: center;
   }
 }
 
@@ -460,10 +451,17 @@ section {
   text-decoration: none;
   font-weight: 600;
   transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  text-align: center;
 }
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 150, 199, 0.4);
+}
+
+#contact .btn {
+  width: auto;
+  align-self: center;
 }
 
 /* --- Sección Testimonios--- */
@@ -607,13 +605,13 @@ section {
 #brands .brand-logo {
   width: 120px;
   height: 80px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
   padding: 10px;
 }
@@ -625,8 +623,8 @@ section {
 }
 #brands .brand-logo:hover {
   transform: scale(1.1);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 5px 15px rgba(0, 150, 199, 0.2);
+  background: transparent;
+  box-shadow: none;
 }
 #brands .brand-logo:hover img {
   filter: brightness(0) invert(0.8) sepia(1) saturate(5) hue-rotate(175deg);
@@ -734,4 +732,13 @@ footer .copyright {
 }
 .circuit-background .moving-line:nth-child(5) {
   animation-delay: 12s;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100% !important;
+  }
+  #contact .btn {
+    width: auto !important;
+  }
 }/*# sourceMappingURL=style.css.map */
