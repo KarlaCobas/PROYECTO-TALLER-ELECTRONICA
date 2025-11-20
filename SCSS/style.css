@@ -371,6 +371,42 @@ section {
   }
 }
 
+/* --- Sección Servicios --- */
+#services {
+  background-color: #03071e;
+}
+#services .services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+#services .service-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+#services .service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 150, 199, 0.2);
+}
+#services .service-card .service-icon {
+  font-size: 3rem;
+  color: #0096c7;
+  margin-bottom: 1.5rem;
+}
+#services .service-card h3 {
+  font-size: 1.5rem;
+  color: #0096c7;
+  margin-bottom: 1rem;
+}
+#services .service-card p {
+  color: #caf0f8;
+}
+
 /* --- Sección Precios --- */
 #pricing .pricing-container {
   display: grid;
@@ -403,6 +439,11 @@ section {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+#pricing .pricing-card .pricing-card-content .service-icon {
+  font-size: 2.5rem;
+  color: #0096c7;
+  margin-bottom: 1rem;
 }
 #pricing .pricing-card h3 {
   font-size: 1.8rem;
@@ -464,54 +505,6 @@ section {
   align-self: center;
 }
 
-/* --- Sección Testimonios--- */
-#testimonials {
-  background-color: #00296b;
-}
-#testimonials .slider-container {
-  max-width: 800px;
-  margin: 0 auto;
-  overflow: hidden;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-#testimonials .slider-container::-webkit-scrollbar {
-  display: none;
-}
-#testimonials .slider-wrapper {
-  display: flex;
-}
-#testimonials .testimonial-slide {
-  flex: 0 0 100%;
-  scroll-snap-align: center;
-  padding: 2rem 3rem;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  margin: 0 5px;
-  background: rgba(255, 255, 255, 0.05);
-}
-#testimonials .testimonial-slide p {
-  font-size: 1.2rem;
-  font-style: italic;
-  color: #caf0f8;
-  margin-bottom: 1.5rem;
-}
-#testimonials .testimonial-slide h4 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #0096c7;
-}
-#testimonials .testimonial-slide img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 3px solid #0096c7;
-  margin-bottom: 1rem;
-}
-
 /* --- Sección Contacto --- */
 #contact #contact-form {
   max-width: 700px;
@@ -553,42 +546,6 @@ section {
   border: none;
   cursor: pointer;
   font-size: 1.1rem;
-}
-
-/* Sección Servicios*/
-#services {
-  background-color: #03071e;
-}
-#services .services-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-#services .service-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  padding: 2rem;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-#services .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 150, 199, 0.2);
-}
-#services .service-card .service-icon {
-  font-size: 3rem;
-  color: #0096c7;
-  margin-bottom: 1.5rem;
-}
-#services .service-card h3 {
-  font-size: 1.5rem;
-  color: #0096c7;
-  margin-bottom: 1rem;
-}
-#services .service-card p {
-  color: #caf0f8;
 }
 
 /* Sección Marcas */
